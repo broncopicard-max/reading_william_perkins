@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Reading Practice: Land of the Rising Sum</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f6f9;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+
+        .passage-panel, .questions-panel {
+            flex: 1;
+            padding: 25px;
+            overflow-y: auto;
+        }
+
+        .passage-panel {
+            background-color: #ffffff;
+            border-right: 2px solid #e0e0e0;
+        }
+
+        .questions-panel {
+            background-color: #fafafa;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section-label {
+            font-weight: bold;
+            color: #003366;
+            margin-right: 5px;
+        }
+
+        .instruction-box {
+            background-color: #eef4fb;
+            border-left: 4px solid #003366;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .headings-list {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .headings-list ul {
+            list-style-type: none;
+        }
+
+        .headings-list li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .question-group {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .question-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        select, input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        select {
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .mcq-options {
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+
+        .mcq-option {
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+
+        .result-box {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .correct {
+            color: #28a745;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .incorrect {
+            color: #dc3545;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .example-badge {
+            background-color: #6c757d;
+            color: white;
+            padding: 2px 6px;
+            font-size: 12px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>IELTS Reading Practice Test</h1>
+</header>
+
+<div class="container">
+    <div class="passage-panel">
+        <h2>LAND OF THE RISING SUM</h2>
+        
+        <p><span class="section-label">A</span> Japan has a significantly better record in terms of average mathematical attainment than England and Wales. Large sample international comparisons of pupils' attainments since the 1960s have established that not only did Japanese pupils at age 13 have better scores of average attainment, but there was also a larger proportion of 'low' attainers in England, where, incidentally, the variation in attainment scores was much greater. The percentage of Gross National Product spent on education is reasonably similar in the two countries, so how is this higher and more consistent attainment in maths achieved?</p>
+
+        <p><span class="section-label">B</span> Lower secondary schools in Japan cover three school years, from the seventh grade (age 13) to the ninth grade (age 15). Virtually all pupils at this stage attend state schools: only 3 per cent are in the private sector. Schools are usually modern in design, set well back from the road and spacious inside. Classrooms are large and pupils sit at single desks in rows. Lessons last for a standardised 50 minutes and are always followed by a 10-minute break, which gives the pupils a chance to let off steam. Teachers begin with a formal address and mutual bowing, and then concentrate on whole-class teaching. Classes are large - usually about 40 - and are unstreamed. Pupils stay in the same class for all lessons throughout the school and develop considerable class identity and loyalty. Pupils attend the school in their own neighbourhood, which in theory removes ranking by school. In practice in Tokyo, because of the relative concentration of schools, there is some competition to get into the 'better' school in a particular area.</p>
+
+        <p><span class="section-label">C</span> Traditional ways of teaching form the basis of the lesson and the remarkably quiet classes take their own notes of the points made and the examples demonstrated. Everyone has their own copy of the textbook supplied by the central education authority, Monbusho, as part of the concept of free compulsory education up to the age of 15. These textbooks are, on the whole, small, presumably inexpensive to produce, but well set out and logically developed. (One teacher was particularly keen to introduce colour and pictures into maths textbooks: he felt this would make them more accessible to pupils brought up in a cartoon culture.) Besides approving textbooks, Monbusho also decides the highly centralised national curriculum and how it is to be delivered.</p>
+
+        <p><span class="section-label">D</span> Lessons all follow the same pattern. At the beginning, the pupils put solutions to the homework on the board, then the teachers comment, correct or elaborate as necessary. Pupils mark their own homework: this is an important principle in Japanese schooling as it enables pupils to see where and why they made a mistake, so that these can be avoided in future. No one minds mistakes or ignorance as long as you are prepared to learn from them. After the homework has been discussed, the teacher explains the topic of the lesson, slowly and with a lot of repetition and elaboration. Examples are demonstrated on the board; questions from the textbook are worked through first with the class, and then the class is set questions from the textbook to do individually. Only rarely are supplementary worksheets distributed in a maths class. The impression is that the logical nature of the textbooks and their comprehensive coverage of different types of examples, combined with the relative homogeneity of the class, renders work sheets unnecessary. At this point, the teacher would circulate and make sure that all the pupils were coping well.</p>
+
+        <p><span class="section-label">E</span> It is remarkable that large, mixed-ability classes could be kept together for maths throughout all their compulsory schooling from 6 to 15. Teachers say that they give individual help at the end of a lesson or after school, setting extra work if necessary. In observed lessons, any strugglers would be assisted by the teacher or quietly seek help from their neighbour. Carefully fostered class identity makes pupils keen to help each other - anyway, it is in their interests since the class progresses together. This scarcely seems adequate help to enable slow learners to keep up. However, the Japanese attitude towards education runs along the lines of 'if you work hard enough, you can do almost anything'. Parents are kept closely informed of their children's progress and will play a part in helping their children to keep up with class, sending them to 'Juku' (private evening tuition) if extra help is needed and encouraging them to work harder. It seems to work, at least for 95 per cent of the school population.</p>
+
+        <p><span class="section-label">F</span> So what are the major contributing factors in the success of maths teaching? Clearly, attitudes are important. Education is valued greatly in Japanese culture; maths is recognised as an important compulsory subject throughout schooling; and the emphasis is on hard work coupled with a focus on accuracy. Other relevant points relate to the supportive attitude of a class towards slower pupils, the lack of competition within a class, and the positive emphasis on learning for oneself and improving one's own standard. And the view of repetitively boring lessons and learning the facts by heart, which is sometimes quoted in relation to Japanese classes, may be unfair and unjustified. No poor maths lessons were observed. They were mainly good and one or two were inspirational.</p>
+    </div>
+
+    <div class="questions-panel">
+        <div id="result" class="result-box"></div>
+
+        <div class="question-group">
+            <h2>Questions 1-5</h2>
+            <div class="instruction-box">
+                Reading Passage 1 has six sections, <strong>A-F</strong>.<br>
+                Choose the correct heading for sections <strong>B-F</strong> from the list of headings below.
+            </div>
+
+            <div class="headings-list">
+                <h3>List of Headings</h3>
+                <ul>
+                    <li><strong>i</strong> The influence of Monbusho</li>
+                    <li><strong>ii</strong> Helping less successful students</li>
+                    <li><strong>iii</strong> The success of compulsory education</li>
+                    <li><strong>iv</strong> Research findings concerning achievements in maths</li>
+                    <li><strong>v</strong> The typical format of a maths lesson</li>
+                    <li><strong>vi</strong> Comparative expenditure on maths education</li>
+                    <li><strong>vii</strong> Background to middle-years education in Japan</li>
+                    <li><strong>viii</strong> The key to Japanese successes in maths education</li>
+                    <li><strong>ix</strong> The role of homework correction</li>
+                </ul>
+            </div>
+
+            <div class="question-item">
+                <label>Example: Section A</label>
+                <select disabled>
+                    <option selected>iv</option>
+                </select>
+                <span class="example-badge">Example Answer</span>
+            </div>
+
+            <div class="question-item">
+                <label for="q1">1. Section B</label>
+                <select id="q1">
+                    <option value="">-- Select Heading --</option>
+                    <option value="i">i</option>
+                    <option value="ii">ii</option>
+                    <option value="iii">iii</option>
+                    <option value="iv">iv</option>
+                    <option value="v">v</option>
+                    <option value="vi">vi</option>
+                    <option value="vii">vii</option>
+                    <option value="viii">viii</option>
+                    <option value="ix">ix</option>
+                </select>
+                <span id="feedback-q1"></span>
+            </div>
+
+            <div class="question-item">
+                <label for="q2">2. Section C</label>
+                <select id="q2">
+                    <option value="">-- Select Heading --</option>
+                    <option value="i">i</option>
+                    <option value="ii">ii</option>
+                    <option value="iii">iii</option>
+                    <option value="iv">iv</option>
+                    <option value="v">v</option>
+                    <option value="vi">vi</option>
+                    <option value="vii">vii</option>
+                    <option value="viii">viii</option>
+                    <option value="ix">ix</option>
+                </select>
+                <span id="feedback-q2"></span>
+            </div>
+
+            <div class="question-item">
+                <label for="q3">3. Section D</label>
+                <select id="q3">
+                    <option value="">-- Select Heading --</option>
+                    <option value="i">i</option>
+                    <option value="ii">ii</option>
+                    <option value="iii">iii</option>
+                    <option value="iv">iv</option>
+                    <option value="v">v</option>
+                    <option value="vi">vi</option>
+                    <option value="vii">vii</option>
+                    <option value="viii">viii</option>
+                    <option value="ix">ix</option>
+                </select>
+                <span id="feedback-q3"></span>
+            </div>
+
+            <div class="question-item">
+                <label for="q4">4. Section E</label>
+                <select id="q4">
+                    <option value="">-- Select Heading --</option>
+                    <option value="i">i</option>
+                    <option value="ii">ii</option>
+                    <option value="iii">iii</option>
+                    <option value="iv">iv</option>
+                    <option value="v">v</option>
+                    <option value="vi">vi</option>
+                    <option value="vii">vii</option>
+                    <option value="viii">viii</option>
+                    <option value="ix">ix</option>
+                </select>
+                <span id="feedback-q4"></span>
+            </div>
+
+            <div class="question-item">
+                <label for="q5">5. Section F</label>
+                <select id="q5">
+                    <option value="">-- Select Heading --</option>
+                    <option value="i">i</option>
+                    <option value="ii">ii</option>
+                    <option value="iii">iii</option>
+                    <option value="iv">iv</option>
+                    <option value="v">v</option>
+                    <option value="vi">vi</option>
+                    <option value="vii">vii</option>
+                    <option value="viii">viii</option>
+                    <option value="ix">ix</option>
+                </select>
+                <span id="feedback-q5"></span>
+            </div>
+        </div>
+
+        <div class="question-group">
+            <h2>Questions 6-9</h2>
+            <div class="instruction-box">
+                Do the following statements agree with the claims of the writer in Reading Passage 1?<br><br>
+                <strong>YES</strong> - if the statement agrees with the claims of the writer<br>
+                <strong>NO</strong> - if the statement contradicts the claims of the writer<br>
+                <strong>NOT GIVEN</strong> - if it is impossible to say what the writer thinks about this
+            </div>
+
+            <div class="question-item">
+                <p><strong>6.</strong> There is a wider range of achievement amongst English pupils studying maths than amongst their Japanese counterparts.</p>
+                <select id="q6">
+                    <option value="">-- Select Answer --</option>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                    <option value="NOT GIVEN">NOT GIVEN</option>
+                </select>
+                <span id="feedback-q6"></span>
+            </div>
+
+            <div class="question-item">
+                <p><strong>7.</strong> The percentage of Gross National Product spent on education generally reflects the level of attainment in mathematics.</p>
+                <select id="q7">
+                    <option value="">-- Select Answer --</option>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                    <option value="NOT GIVEN">NOT GIVEN</option>
+                </select>
+                <span id="feedback-q7"></span>
+            </div>
+
+            <div class="question-item">
+                <p><strong>8.</strong> Private schools in Japan are more modern and spacious than state-run lower secondary schools.</p>
+                <select id="q8">
+                    <option value="">-- Select Answer --</option>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                    <option value="NOT GIVEN">NOT GIVEN</option>
+                </select>
+                <span id="feedback-q8"></span>
+            </div>
+
+            <div class="question-item">
+                <p><strong>9.</strong> Teachers mark homework in Japanese schools.</p>
+                <select id="q9">
+                    <option value="">-- Select Answer --</option>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                    <option value="NOT GIVEN">NOT GIVEN</option>
+                </select>
+                <span id="feedback-q9"></span>
+            </div>
+        </div>
+
+        <div class="question-group">
+            <h2>Questions 10-13</h2>
+            <div class="instruction-box">
+                Choose the correct letter, <strong>A, B, C or D</strong>.
+            </div>
+
+            <div class="question-item">
+                <p><strong>10.</strong> Maths textbooks in Japanese schools are</p>
+                <div class="mcq-options">
+                    <div class="mcq-option"><input type="radio" name="q10" value="A" id="q10a"> <label for="q10a">A. cheap for pupils to buy.</label></div>
+                    <div class="mcq-option"><input type="radio" name="q10" value="B" id="q10b"> <label for="q10b">B. well organised and adapted to the needs of the pupils.</label></div>
+                    <div class="mcq-option"><input type="radio" name="q10" value="C" id="q10c"> <label for="q10c">C. written to be used in conjunction with TV programmes.</label></div>
+                    <div class="mcq-option"><input type="radio" name="q10" value="D" id="q10d"> <label for="q10d">D. not very popular with many Japanese teachers.</label></div>
+                </div>
+                <span id="feedback-q10"></span>
+            </div>
+
+            <div class="question-item">
+                <p><strong>11.</strong> When a new maths topic is introduced,</p>
+                <div class="mcq-options">
+                    <div class="mcq-option"><input type="radio" name="q11" value="A" id="q11a"> <label for="q11a">A. students answer questions on the board.</label></div>
+                    <div class="mcq-option"><input type="radio" name="q11" value="B" id="q11b"> <label for="q11b">B. students rely entirely on the textbook.</label></div>
+                    <div class="mcq-option"><input type="radio" name="q11" value="C" id="q11c"> <label for="q11c">C. it is carefully and patiently explained to the students.</label></div>
+                    <div class="mcq-option"><input type="radio" name="q11" value="D" id="q11d"> <label for="q11d">D. it is usual for students to use extra worksheets.</label></div>
+                </div>
+                <span id="feedback-q11"></span>
+            </div>
+
+            <div class="question-item">
